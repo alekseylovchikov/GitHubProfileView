@@ -1,3 +1,4 @@
 .jumbotron {
-  margin-top: -20px;
+  background: url(../img/startup-photos.jpg) 100% 20% no-repeat;
+  background-size: cover;
 }

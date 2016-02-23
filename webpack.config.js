@@ -1,17 +1,17 @@
+var path = require('path');
+
 module.exports = {
     entry: [
-        // from
-        './src/index.js'
+        './src/index'
     ],
     output: {
-        // to
-        path: __dirname,
-        filename: 'app/js/main.js'
+        path: path.join(__dirname, 'app/js'),
+        filename: 'main.js'
     },
     module: {
         loaders: [
             {
-                test: /\.jsx?$/,
+                test: /\.js$/,
                 loader: 'babel',
                 exclude: /node_modules/
             }
